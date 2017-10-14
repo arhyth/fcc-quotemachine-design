@@ -9,7 +9,7 @@ function reqListener() {
 var texto,textauthor;
 var quoteReq = new XMLHttpRequest();
 quoteReq.onload = reqListener;
-quoteReq.open("GET", "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1");
+quoteReq.open("GET", "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1");
 quoteReq.send();
 quoteReq.responseType = "json";
 
