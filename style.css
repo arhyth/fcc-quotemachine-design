@@ -1,27 +1,23 @@
 body {
     background-color: #ee4545;
 }
+
 #theblock {
     position: relative;
-    top: 10vh;
+    width: 100vh;
+    left: 25vw;
+    top: 15vh;
 }
-
 #quoteblock {
     font-family: 'Forum',cursive;
     font-size: 40px;
-    width: 100vh;
-    color: #f5f5e7
+    color: #f5f5e7;
 }
 #author {
     font-family: 'Molengo',sans-serif;
     font-size: 24px;
     margin: auto auto 4px 1px;
     color: #f3f2e6
-}
-
-.container {
-    display: flex;
-    justify-content: center;
 }
 
 #tweet {
@@ -33,31 +29,35 @@ body {
     display: inline-block;
     border-radius: 2px;
     cursor: pointer;
+    margin: 0 0 100px 0;
+}
+#tweet:hover {
+    background-color: #408fdd;
 }
 
-#footer {
-    position: absolute;
-    bottom: 5px;
-    justify-content: center;
-    font-family: 'Lato', sans-serif;
+#footercontainer {
+    font-family: 'Raleway', sans-serif;
     font-size: 10px;
     color: rgb(219, 219, 211);
-}
 
-#footer :first-child {
-    position: relative;
-    display: inline-block;
+    position: fixed;
+    bottom: 5px;
+    left: 45vw;
+}
+#flexi {
+    display: flex;
+    direction: row;
+    justify-content: center;
 }
 
 #attribution {
-    position: relative;
-    display: inline-block;
     color: rgb(185, 185, 182);
 }
 
 @media (max-width:800px) {
     #quoteblock {
-        width: 80vw;
         font-size: 24px;
+        width: 80vw;
+        left: 8vw;
     }
 }
